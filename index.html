@@ -1,230 +1,132 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>arts</title>
-    <script src="../js/jquery.min.js"></script>
-    <script src="../bootstrap4/js/bootstrap.js"></script>
-    <link rel="stylesheet" href="../bootstrap4/css/bootstrap.css">
-    <link rel="stylesheet" href="../bootstrap4/css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="../bootstrap4/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="../css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>freeCodeCamp : Build a Personal Portfolio Webpage</title>
+  
+  <link rel="stylesheet" href="../plugins/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../css/index.css">
+
 </head>
-
 <body>
-    <div class="container-fluid">
-        <!--head-->
-        <div class="row">
-            <div class="col-md-12">
-                <!--red-->
-                <div class="row bg-red font-color ">
-                    <div class="col-md-12">
-                        <div class="row">
-                            <!--title-->
-                            <div id="head-title" class="col-md-12 text-center">
-                                <h1>为 WEB 艺术家创造的 PHP 框架。</h1>
-                            </div>
-                            <!--buttons-->
-                            <div class="col-md-12 text-center">
-                                <div id="head-button-div">
-                                    <button class="btn btn-light red-button font-color">5.1文档</button>
-                                    <button class="btn btn-light red-button font-color">5.2文档</button>
-                                    <button class="btn btn-light red-button font-color">5.3文档</button>
-                                    <button class="btn btn-light red-button font-color">5.4文档</button>
-                                    <button class="btn btn-light red-button font-color">5.5文档</button>
-                                    <button class="btn btn-light red-button font-color">5.6文档</button>
-                                    <button class="btn btn-light red-button font-color">5.7文档</button>
-                                    <button class="btn btn-light red-button font-color">5.8文档</button>
-                                    <button class="btn btn-light red-button font-color">6.1文档</button>
-                                    <button class="btn btn-light red-button font-color">6.2文档</button>
-                                    <button class="btn btn-light red-button font-color">6.3文档</button>
-                                    <button class="btn btn-light red-button font-color">6.4文档</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!--nav-->
-                        <div class="row" id="nav-row">
-                            <div class="col-md-12">
-                                <nav class="navbar navbar-default">
-                                    <div class="container">
-                                        <ul>
-                                            <li><a href="#">首页</a></li>
-                                            <li><a href="#">Laravel中文文档</a></li>
-                                            <li><a href="#">Packagist中国镜像</a></li>
-                                            <li><a href="#">Composer中文文档</a></li>
-                                            <li><a href="#">PHP中文手册</a></li>
-                                            <li><a href="#">PHP编程之道</a></li>
-                                            <li><a href="#">问答社区</a></li>
+  <div class="all-content">
+    <header class="top">
+      <div class="w">
+        <!--header左边区域-->
+        <div class="header-left">
+          <a href="#">qlip|UI/UX Design and Development</a>
+        </div>
+        
+        <!--header右边区域-->
+        <div id="navbar-example">
+          <!--导航条-->
+          <ul class="nav nav-tabs " role="tablist" id="myTab">
+            <li role="presentation" class="active"><a href="#ABOUT"  role="tab" >ABOUT</a></li>
+            <li role="presentation"><a href="#POPRTFOLIO"  role="tab" >POPRTFOLIO</a></li>
+            <li role="presentation"><a href="#CONTACT"  role="tab" >CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    </header>
+    
+    <div class="w2">
+      <!--监听空间-->
+      <div class="tab-content" id="myTabContent" data-spy="scroll" data-target="#navbar-example" data-offset="0">
+        <div  id="ABOUT">
+          <!--about左边区域-->
+          <div class="about-left">
+            <p>Front-End Developer and UX/UI designer, with practical experience in project management, branding strategy, and creative direction; devoted to functional programming and information architecture.</p>
+            <div class="about-left-hr">
+              <hr>
+            </div>
+            <p>Web Developer - User Experience Designer - Graphic Artist</p>
+          </div>
 
-                                        </ul>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
+          <!--about右边区域-->
+          <div class="about-right">
+            <img src="../images/dog.png" width="380px">
+            <p>A picture of Justin looking at San Francisco from across the Golden Gate Bridge.</p>
+          </div>
+          
+        </div>
 
+        <div id="POPRTFOLIO">
+          <p>PORTFOLIO</p>
+          <div class="poprtfolio-hr">
+            <hr>
+          </div>
+        </div>
+
+        <div  id="CONTACT">
+          <p>CONTACT ME</p>
+          <div class="contact-hr">
+            <hr>
+          </div>
+          
+          <div class="contact-bottom">
+            <div class="contact-b-left">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
                 </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputFile">File input</label>
+                  <input type="file" id="exampleInputFile">
+                  <p class="help-block">Example block-level help text here.</p>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Check me out
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
             </div>
 
+            <div class="contact-b-right">
+              <p>Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku, random questions about the universe and the meaning of life, or even if only for some nice Fika here in stunning Toronto... just feel free to drop me a line anytime.</p>
+              <p>I promise to reply A.S.A.P.</p>
+              <p>Note: No spam/soliciting pour moi, merci </p>
+            </div>
+          </div>
+          
         </div>
+      </div>
     </div>
-    <!--content-->
-    <div class="row" id="wapper">
-        <div class="col-md-7">
-            <!--each block-->
-            <div class="content-block">
-                <h3 class="text-center">Laravel 5.6 版本正式发布</h3>
-                <div class="second-div text-center">
-                    作者：&nbsp;<span class="author-name">王赛</span>&nbsp;&nbsp;2019年3月8日
-                </div>
-                <div class="img-div">
-                    <img src="../img/laravel.jpg" alt="">
-                </div>
-                <p>
-                    Laravel 5.6 是继5.5之后Laravel官方发布的最新版本，此版本包含众多新特性，接下来我们说一说几个重要特性，如需查看发布的需求日志，请<span
-                        class="light">点击这里</span>。
-                </p>
-                <button class="btn btn-light red-button font-color">阅读全文</button>
-                <hr />
-            </div>
-            <div class="content-block">
-                <h3 class="text-center">Laravel 5.6 版本正式发布</h3>
-                <div class="second-div text-center">
-                    作者：&nbsp;<span class="author-name">王赛</span>&nbsp;&nbsp;2019年3月8日
-                </div>
-                <div class="img-div">
-                    <img src="../img/laravel.jpg" alt="">
-                </div>
-                <p>
-                    Laravel 5.6 是继5.5之后Laravel官方发布的最新版本，此版本包含众多新特性，接下来我们说一说几个重要特性，如需查看发布的需求日志，请<span
-                        class="light">点击这里</span>。
-                </p>
-                <button class="btn btn-light red-button font-color">阅读全文</button>
-                <hr />
 
-            </div>
-            <div class="content-block">
-                <h3 class="text-center">Laravel 5.6 版本正式发布</h3>
-                <div class="second-div text-center">
-                    作者：&nbsp;<span class="author-name">王赛</span>&nbsp;&nbsp;2019年3月8日
-                </div>
-                <div class="img-div">
-                    <img src="../img/laravel.jpg" alt="">
-                </div>
-                <p>
-                    Laravel 5.6 是继5.5之后Laravel官方发布的最新版本，此版本包含众多新特性，接下来我们说一说几个重要特性，如需查看发布的需求日志，请<span
-                        class="light">点击这里</span>。
-                </p>
-                <button class="btn btn-light red-button font-color">阅读全文</button>
-                <hr />
-            </div>
+    <div class="bottom">
+      <div class="w3">
+        <!--footer左边区域-->
+        <div class="footer-left">
+          <p>ABOUT THIS PAGE</p>
+          <p>Made by <a href="#">ZLQ</a>.</p>
         </div>
-        <div class="col-md-5">
-            <div id="social" class="content-right col-md-12">
-                <h5>社区</h5>
-                <hr />
-                <p>qq群：4626694081</p>
-                <p>问答社区</p>
-            </div>
-
-            <div id="download" class="content-right col-md-12">
-                <h5>下载</h5>
-                <hr />
-                <p>
-                    <button class="btn btn-light red-button font-color">Laravel&Lumen一键安装包下载</button>
-                </p>
-            </div>
-            <div id="document" class="content-right col-md-12">
-                <h5>文档</h5>
-                <hr />
-                <p>
-                    <button class="btn btn-light red-button font-color">5.6文档</button>
-                </p>
-                <p>
-                    <button class="btn btn-light red-button font-color">5.7文档</button>
-                </p>
-                <p>
-                    <button class="btn btn-light red-button font-color">5.8文档</button>
-                </p>
-                <p>
-                    <button class="btn btn-light red-button font-color">5.9文档</button>
-                </p>
-                <p>
-                    <button class="btn btn-light red-button font-color">6.1文档</button>
-                    <p>
-                        <button class="btn btn-light red-button font-color">6.2文档</button>
-                    </p>
-                    <p>
-                        <button class="btn btn-light red-button font-color">6.3文档</button>
-                    </p>
-                    <p>
-                        <button class="btn btn-light red-button font-color">6.4文档</button>
-                    </p>
-                </p>
-            </div>
+        
+        <!--footer右边区域-->
+        <div class="footer-right">
+          <p>AROUND THE WEB</p>
         </div>
+      </div>
+      
     </div>
-    <!--foot-->
-    <div class="row" id="foot-div">
-        <!--grey-->
-        <div id="other-info-div" class="col-md-12 ">
-            <div class="row ">
-                <div class="col-md-4  text-center ">
-                    <h3 >最新文章</h3>
-                    <hr/>
-                    <div class="other-info-block-div">
-                        <p class="other-info-title">Laravel5.6版本正式发布</p>
-                        <p class="other-info-time">2018年02月08日</p>
-                    </div>
-                    <hr/>
-                    <div class="other-info-block-div">
-                            <p class="other-info-title">Laravel5.6版本正式发布</p>
-                            <p class="other-info-time">2018年02月08日</p>
-                     </div>
-                     <hr/>
-                     <div class="other-info-block-div">
-                            <p class="other-info-title">Laravel5.6版本正式发布</p>
-                            <p class="other-info-time">2018年02月08日</p>
-                    </div>
-                    <hr/>
-                </div>
-                <div class="col-md-4 text-center">
-                        <h3>标签云</h3>
-                        <hr/>
-                        <button class="btn btn-light red-button font-color">...</button>
-                </div>
-                <div class="col-md-4 text-center">
-                        <h3>友链</h3>
-                        <hr/>
-                        <button class="btn btn-light red-button font-color">bootstrap中文网</button>
-                        <button class="btn btn-light red-button font-color">bootstrap中文网</button>
-                        <button class="btn btn-light red-button font-color">bootstrap中文网</button>
-                        <button class="btn btn-light red-button font-color">bootstrap中文网</button>
-                        <button class="btn btn-light red-button font-color">bootstrap中文网</button>
-                        <button class="btn btn-light red-button font-color">bootstrap中文网</button>
-                        <button class="btn btn-light red-button font-color">bootstrap中文网</button>
-                        <button class="btn btn-light red-button font-color">bootstrap中文网</button>
-                        <button class="btn btn-light red-button font-color">bootstrap中文网</button>
-                        <button class="btn btn-light red-button font-color">bootstrap中文网</button>
-                        <button class="btn btn-light red-button font-color">bootstrap中文网</button>
-                        <button class="btn btn-light red-button font-color">bootstrap中文网</button>
-                        <button class="btn btn-light red-button font-color">bootstrap中文网</button>
-                        <button class="btn btn-light red-button font-color">bootstrap中文网</button>
-                        
-                </div>
-            </div>
+    <footer>
+      <p>qlip © 2019. All Rights Reversed</p>
+    </footer>
 
-        </div>
-        <!--black-->
-        <div id="company-info-div" class="col-md-12 text-center">
-            <p>广播电视节目制作经营许可证：（沪）字第1248号 | 网络文化经营许可证：沪网文 [2016]2296-134号 | 信息网络传播视听节目许可证</p>
-
-        </div>
-
-    </div>
-    </div>
+  </div>
+  
+  
 </body>
+
+<script src="../plugins/jquery/jquery-3.3.1.js"></script>
+<script src="../plugins/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
 
 </html>

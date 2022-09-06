@@ -45,9 +45,10 @@ h4:before {
 ==================================================*/
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    line-height: 24px;
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family:'Playfair Display', serif; */
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .size-50 {
@@ -276,7 +277,7 @@ a.active {
 ==================================================*/
 
 #about {
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
 }
 
 .about-img-div img {
@@ -298,7 +299,7 @@ a.active {
 ==================================================*/
 
 #experience {
-    padding: 3rem 0 1rem 0;
+    padding: 1rem 0 0.5rem 0;
     background: #f3f3f3
 }
 
@@ -333,7 +334,7 @@ a.active {
     position: relative;
 }
 
-.timeline:before {
+/* .timeline:before {
     background-color: black;
     content: '';
     margin-left: -1px;
@@ -342,7 +343,7 @@ a.active {
     left: 2em;
     width: 2px;
     height: 100%;
-}
+} */
 
 .timeline-event {
     position: relative;
@@ -359,10 +360,10 @@ a.active {
 }
 
 .timeline-event-copy {
-    padding-top: 2em;
+    /* padding-top: 2em; */
     position: relative;
-    top: -1.875em;
-    left: 4em;
+    /* top: -1.875em; */
+    left: 3em;
     width: 100%;
 }
 
@@ -386,14 +387,30 @@ a.active {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     background-color: #425BB5;
-    outline: 10px solid #f3f3f3;
+    outline: 6px solid #f3f3f3;
     display: block;
-    margin: 0.5em 0.5em 0.5em -0.5em;
+    margin: 0.5em 0.5em 0.3em -0.3em;;
     position: absolute;
     top: 0;
     left: 2em;
-    width: 1em;
-    height: 1em;
+    width: 0.6em;
+    height: 0.6em;
+}
+
+.timeline-event-icon2 {
+    -webkit-transition: -webkit-transform 0.2s ease-in;
+    transition: -webkit-transform 0.2s ease-in;
+    transition: transform 0.2s ease-in;
+    transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #425BB5;
+    display: block;
+    margin: 0.4em 0.5em 0em 0em;
+    top: 0;
+    width: 0.6em;
+    height: 0.6em;
+    float: left;
 }
 
 .timeline-event-thumbnail {
@@ -418,7 +435,7 @@ a.active {
 ==================================================*/
 
 #projects {
-    padding: 3rem 0 1rem 0;
+    padding: 1rem 0 0.5rem 0;
 }
 
 .portfolio .categories-grid span {
@@ -601,7 +618,7 @@ a.active {
 ==================================================*/
 
 #contact {
-    padding: 3rem 0 1rem 0;;
+    padding: 1rem 0 0.5rem 0;;
     background: #f3f3f3
 }
 
